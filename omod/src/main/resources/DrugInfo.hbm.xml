@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="org.openmrs.module.kenyaemr.model">
+
+	<class name="DrugInfo" table="drug_info" batch-size="500">
+
+		<id name="drugInfoId" type="int" column="drug_info_id"
+			unsaved-value="0">
+				<generator class="native" />
+		</id>
+		<property name="drugName" column="drug_name" />
+		<property name="drugCode" column="drug_code" />
+		<property name="adverseEffect" column="adverse_effect" />
+	</class>
+</hibernate-mapping>

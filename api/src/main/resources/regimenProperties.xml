@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+<entry key="R-H.strength">150/75 mg</entry>
+<entry key="R-H.type">tab</entry>
+<entry key="R-H.frequency">Once daily</entry>
+<!-- <entry key="R-H.route">Oral</entry> -->
+<entry key="R-H.route">160240</entry>
+
+<entry key="R-H-E.strength">150/75/275 mg</entry>
+<entry key="R-H-E.type">tab</entry>
+<entry key="R-H-E.frequency">Once daily</entry>
+<!-- <entry key="R-H-E.route">Oral</entry> -->
+<entry key="R-H-E.route">160240</entry>
+
+<entry key="R-H-Z.strength">60/30/150 mg</entry>
+<entry key="R-H-Z.type">tab</entry>
+<entry key="R-H-Z.frequency">Once daily</entry>
+<!-- <entry key="R-H-Z.route">Oral</entry>  -->
+<entry key="R-H-Z.route">160240</entry>
+
+<entry key="R-H-Z-E.strength">150/75/400/275 mg</entry>
+<entry key="R-H-Z-E.type">tab</entry>
+<entry key="R-H-Z-E.frequency">Once daily</entry>
+<!-- <entry key="R-H-Z-E.route">Oral</entry> -->
+<entry key="R-H-Z-E.route">160240</entry>
+
+<entry key="H.strength">300 mg</entry>
+<entry key="H.type">tab</entry>
+<entry key="H.frequency">Once daily</entry>
+<!-- <entry key="H.route">Oral</entry> -->
+<entry key="H.route">160240</entry>
+
+<entry key="R.strength">300 mg</entry>
+<entry key="R.type">tab</entry>
+<entry key="R.frequency">Once daily</entry>
+<!-- <entry key="R.route">Oral</entry> -->
+<entry key="R.route">160240</entry>
+
+<entry key="E.strength">400 mg</entry>
+<entry key="E.type">tab</entry>
+<entry key="E.frequency">Once daily</entry>
+<!-- <entry key="E.route">Oral</entry> -->
+<entry key="E.route">160240</entry>
+
+<entry key="Z.strength">500 mg</entry>
+<entry key="Z.type">tab</entry>
+<entry key="Z.frequency">Twice daily</entry>
+<!-- <entry key="Z.route">Oral</entry> -->
+<entry key="Z.route">160240</entry>
+
+<entry key="S.strength">1 g vial</entry>
+<entry key="S.type">vial</entry>
+<entry key="S.frequency">Once daily</entry>
+<!-- <entry key="S.route">IM (Intramuscular)</entry> -->
+<entry key="S.route">160243</entry>
+
+<entry key="Km.strength">500 mg</entry>
+<entry key="Km.type">vial</entry>
+<entry key="Km.frequency">6 times per week</entry>
+<!-- <entry key="Km.route">IM (Intramuscular)</entry> -->
+<entry key="Km.route">160243</entry>
+
+<entry key="Am.strength">1 g vial</entry>
+<entry key="Am.type">vial</entry>
+<entry key="Am.frequency">6 times per week</entry>
+<!-- <entry key="Am.route">IM (Intramuscular)</entry> -->
+<entry key="Am.route">160243</entry>
+
+<entry key="Cm.strength">1 g vial</entry>
+<entry key="Cm.type">vial</entry>
+<entry key="Cm.frequency">6 times per week</entry>
+<!-- <entry key="Cm.route">IM (Intramuscular)</entry> -->
+<entry key="Cm.route">160243</entry>
+
+<entry key="Ofx.strength">400 mg</entry>
+<entry key="Ofx.type">tab</entry>
+<entry key="Ofx.frequency">Twice daily</entry>
+<!-- <entry key="Ofx.route">Oral</entry> -->
+<entry key="Ofx.route">160240</entry>
+
+<entry key="Lfx.strength">250 mg</entry>
+<entry key="Lfx.type">tab</entry>
+<entry key="Lfx.frequency">Twice daily</entry>
+<!-- <entry key="Lfx.route">Oral</entry> -->
+<entry key="Lfx.route">160240</entry>
+
+<entry key="Mfx.strength">400 mg</entry>
+<entry key="Mfx.type">tab</entry>
+<entry key="Mfx.frequency">Once daily</entry>
+<!-- <entry key="Mfx.route">Oral</entry> -->
+<entry key="Mfx.route">160240</entry>
+
+<entry key="Gfx.strength">400 mg</entry>
+<entry key="Gfx.type">tab</entry>
+<entry key="Gfx.frequency">Once daily</entry>
+<!-- <entry key="Gfx.route">Oral</entry> -->
+<entry key="Gfx.route">160240</entry>
+
+<entry key="Cfx.strength">500 mg</entry>
+<entry key="Cfx.type">tab</entry>
+<entry key="Cfx.frequency">Twice daily</entry>
+<!-- <entry key="Cfx.route">Oral</entry> -->
+<entry key="Cfx.route">160240</entry>
+
+<entry key="Eto.strength">250 mg</entry>
+<entry key="Eto.type">tab</entry>
+<entry key="Eto.frequency">Once daily</entry>
+<!-- <entry key="Eto.route">Oral</entry> -->
+<entry key="Eto.route">160240</entry>
+
+<entry key="Pto.strength">250 mg</entry>
+<entry key="Pto.type">tab</entry>
+<entry key="Pto.frequency">Once daily</entry>
+<!-- <entry key="Pto.route">Oral</entry> -->
+<entry key="Pto.route">160240</entry>
+
+<entry key="Cs.strength">250 mg</entry>
+<entry key="Cs.type">tab</entry>
+<entry key="Cs.frequency">Once daily</entry>
+<!-- <entry key="Cs.route">Oral</entry> -->
+<entry key="Cs.route">160240</entry>
+
+<entry key="PAS.strength">4 g sachet</entry>
+<entry key="PAS.type">sachet</entry>
+<entry key="PAS.frequency">Twice daily</entry>
+<!-- <entry key="PAS.route">Oral</entry> -->
+<entry key="PAS.route">160240</entry>
+
+<entry key="Sodium PAS.strength">100 g jar</entry>
+<entry key="Sodium PAS.type">scoop</entry>
+<entry key="Sodium PAS.frequency">Twice daily</entry>
+<!-- <entry key="sodium PAS.route">Oral</entry> -->
+<entry key="Sodium PAS.route">160240</entry> 
+
+<entry key="Cfz.strength">100 mg</entry>
+<entry key="Cfz.type">tab</entry>
+<entry key="Cfz.frequency">Once daily</entry>
+<!-- <entry key="Cfz.route">Oral</entry> -->
+<entry key="Cfz.route">160240</entry>
+
+<entry key="Lnz.strength">600 mg</entry>
+<entry key="Lnz.type">tab</entry>
+<entry key="Lnz.frequency">Once daily</entry>
+<!-- <entry key="Lnz.route">Oral</entry> -->
+<entry key="Lnz.route">160240</entry>
+
+<entry key="Amx/Clv.strength">500/125 mg</entry>
+<entry key="Amx/Clv.type">tab</entry>
+<entry key="Amx/Clv.frequency">Three times daily</entry>
+<!-- <entry key="Amx/Clv.route">Oral</entry> -->
+<entry key="Amx/Clv.route">160240</entry>
+
+<entry key="Amx.strength">500 mg</entry>
+<entry key="Amx.type">tab</entry>
+<entry key="Amx.frequency">Three times daily</entry>
+<!-- <entry key="Amx.route">Oral</entry> -->
+<entry key="Amx.route">160240</entry>
+
+<entry key="Imp/Cln.strength">500/500 mg vial</entry>
+<entry key="Imp/Cln.type">vial</entry>
+<entry key="Imp/Cln.frequency">Four times daily</entry>
+<!-- <entry key="Imp/Cln.route">Intravenous</entry> -->
+<entry key="Imp/Cln.route">160242</entry>
+
+<entry key="clr.strength">500 mg</entry>
+<entry key="Clr.type">tab</entry>
+<entry key="Clr.frequency">Twice daily</entry>
+<!-- <entry key="Clr.route">Oral</entry> -->
+<entry key="Clr.route">160240</entry>
+
+<entry key="High-dose H.strength">300 mg</entry>
+<entry key="High-dose H.type">tab</entry>
+<entry key="High-dose H.frequency">Once daily</entry>
+<!-- <entry key="High-dose H.route">Oral</entry> -->
+<entry key="High-dose H">160240</entry>
+
+<entry key="Trd.strength">250 mg</entry>
+<entry key="Trd.type">tab</entry>
+<entry key="Trd.frequency">Once daily</entry>
+<!-- <entry key="Trd.route">Oral</entry> -->
+<entry key="Trd.route">160240</entry>
+
+<entry key="Bdq.strength">100 mg</entry>
+<entry key="Bdq.type">tab</entry>
+<entry key="Bdq.frequency">Once daily</entry>
+<!-- <entry key="Bdq.route">Oral</entry> -->
+<entry key="Bdq.route">160240</entry>
+
+<entry key="Dlm.strength">50 mg</entry>
+<entry key="Dlm.type">tab</entry>
+<entry key="Dlm.frequency">Twice daily</entry>
+<!-- <entry key="Dlm.route">Oral</entry> -->
+<entry key="Dlm.route">160240</entry>
+</properties>

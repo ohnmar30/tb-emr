@@ -1,0 +1,330 @@
+<!--
+  ~ The contents of this file are subject to the OpenMRS Public License
+  ~ Version 1.0 (the "License"); you may not use this file except in
+  ~ compliance with the License. You may obtain a copy of the License at
+  ~ http://license.openmrs.org
+  ~
+  ~ Software distributed under the License is distributed on an "AS IS"
+  ~ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+  ~ License for the specific language governing rights and limitations
+  ~ under the License.
+  ~
+  ~ Copyright (C) OpenMRS, LLC.  All Rights Reserved.
+-->
+<htmlform> <script type="text/javascript">
+		jq(document).ready(function () {
+			
+			if (getValue('decision.value') == 163496){ 
+//			jq('#notinitate :input').prop('disabled', false);	
+//			jq('#other_regional :input').prop('disabled', false);	
+//			jq('#next_date :input').prop('disabled', false);
+		}
+		else {
+//			jq('#notinitate :input').prop('disabled', true);	
+//			jq('#other_regional :input').prop('disabled', true);
+//			jq('#next_date :input').prop('disabled', true);
+		}
+/*
+			if (getValue('notinitate.value') == 5622){ 
+		  jq('#other_regional :input').prop('disabled', false);					
+	                 }
+	      else {
+		  jq('#other_regional :input').prop('disabled', true);					
+	       }
+*/          
+			if (getValue('therapySelection.value') == 163505) {
+				jq('#therapyName :input').prop('disabled', false);
+				if (getValue('therapyName.value') == 5622){
+					jq('#otherReason :input').prop('disabled', false);					
+				}
+				else {
+					jq('#otherReason :input').prop('disabled', true);					
+				}
+			}
+			else {
+				jq('#therapyName :input').prop('disabled', true);
+				jq('#otherReason :input').prop('disabled', true);
+			}
+		
+			jq("#therapySelection").change(function() {
+				if (getValue('therapySelection.value') == 163505) {
+					jq('#therapyName :input').prop('disabled', false);
+					if (getValue('therapyName.value') == 5622){
+						jq('#otherReason :input').prop('disabled', false);					
+					}
+					else {
+						jq('#otherReason :input').prop('disabled', true);					
+					}
+				}
+				else {
+					jq('#therapyName :input').prop('disabled', true);
+					jq('#otherReason :input').prop('disabled', true);
+				}
+			});
+			
+			jq("#therapyName").change(function() {
+				if (getValue('therapyName.value') == 5622){
+					jq('#otherReason :input').prop('disabled', false);					
+				}
+				else {
+					jq('#otherReason :input').prop('disabled', true);					
+				}
+			});
+			/*			
+			jq("#decision").change(function() { 
+				if (getValue('decision.value') == 163496){ 
+					jq('#notinitate :input').prop('disabled', false);	
+					jq('#next_date :input').prop('disabled', false);
+					if (getValue('notinitate.value') == 5622){ 
+						  jq('#other_regional :input').prop('disabled', false);					
+					                 }
+					      else {
+						  jq('#other_regional :input').prop('disabled', true);					
+					       }
+				          
+				}
+				else {
+					jq('#notinitate :input').prop('disabled', true);	
+					jq('#other_regional :input').prop('disabled', true);	
+					jq('#next_date :input').prop('disabled', true);
+				}
+			});
+			jq("#notinitate").change(function() { 
+				if (getValue('notinitate.value') == 5622){ 
+					jq('#other_regional :input').prop('disabled', false);					
+				}
+				else {
+					jq('#other_regional :input').prop('disabled', true);					
+				}
+			});
+		
+			if (getValue('alcohol.value') == 1066) {
+				jq('#alcoholType :input').prop('disabled', true);
+			}
+			else {
+				jq('#alcoholType :input').prop('disabled', false);
+			}
+		
+			jq("#alcohol input:radio").change(function() {
+				if (getValue('alcohol.value') == 1066) {
+					jq('#alcoholType :input').prop('disabled', true);
+				}
+				else {
+					jq('#alcoholType :input').prop('disabled', false);
+				}
+			});
+			
+		*/	
+			
+			// show fields with data 
+			fieldIndex = 26; 
+			j=1;
+			while(document.getElementById("w"+fieldIndex).value!="" &amp;&amp; j &lt; 4){
+				
+				jQuery('#'+j+'-toggleContainer').show();   
+				fieldIndex=fieldIndex+10;
+				if(document.getElementById("w"+fieldIndex).value != '')
+					{
+				$j('#'+j+'-removeEntry').toggle(false);
+				$j('#'+j+'-addEntry').toggle(false);
+					}
+				j++;
+			}
+	
+			$j('#1-removeEntry').remove();
+			$j('#3-addEntry').remove();
+			$j('#1-toggleContainer').show();
+			
+			$j('button.addEntry').on("click", function(){
+				var correctedAddButtonId = parseFloat(this.id) + 1;      
+				var contentAddId = "#" + correctedAddButtonId + "-toggleContainer";
+				$j(contentAddId).toggle(true);      
+				$j('#' + this.id).toggle(false); 
+				$j('#' + parseFloat(this.id) + '-removeEntry').toggle(false);
+				
+				return false;});    
+			 
+			$j('button.removeEntry').on("click", function(){ 
+				
+				var correctedRemoveButtonId = parseFloat(this.id) - 1;
+				var contentAddId = "#" + parseFloat(this.id) + "-toggleContainer";
+				$j(contentAddId).toggle(false);
+				$j( ':input:not(:button)', contentAddId).val([]);
+				$j('#' + correctedRemoveButtonId + '-addEntry').toggle(true);
+				$j('#' + correctedRemoveButtonId + '-removeEntry').toggle(true);
+				return false;
+				});
+		});
+	</script> <!-- STYLE ======================
+	=================================-->
+
+<style>
+td, tr, table {
+	padding: 5px 10px 5px 5px;
+}
+
+table {
+	margin-left: 15px;
+}
+
+tbody {
+	padding-left: 0px !important;
+}
+
+input[type=text] {
+	width: 200px;
+}
+
+select {
+	width: 200px;
+	height: 28px !important;
+}
+
+input[type=checkbox] {
+	padding: 0 0 0 0;
+	min-width: 25px;
+	font-weight: bold;
+	background-color: #d9d9d9 !important;
+}
+
+input[type=radio] {
+	padding: 0 0 0 0;
+	min-width: 20px;
+	font-weight: bold;
+	background-color: #d9d9d9 !important;
+}
+
+input[type=button], button {
+	padding: 5px 10px 5px 5px;
+	margin-right: 15px;
+	min-width: 110px;
+	font-weight: bold;
+	background-color: #d9d9d9 !important;
+}
+</style>
+
+<!-- STYLE ======================
+	=================================--> <!-- Encounter date, provider and location are not relevant for CE forms -->
+<div style="display: none">
+	<encounterDate id="encounter-date" showTime="true" />
+	<encounterLocation default="GlobalProperty:kenyaemr.defaultLocation" />
+</div>
+
+<div class="ke-form-content">
+	<table width="100%" align="left" style="background-color: #c7d8a7">
+		<tr>
+			<td>
+				<table align="left" class="tb1" cellspacing="10" width="70%"
+					style="background-color: #e8efdc; margin-left: 0px !important;">
+					<tr>
+						<td>Forms for Submission to MDR-TB committee:</td>
+						<td><obs conceptId="bd85f34d-0caf-46ae-ae32-9a9e6cdf1224"
+								answerConceptId="5325AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+								answerLabel="Patient Identity" style="checkbox" /></td>
+						<td><obs conceptId="bd85f34d-0caf-46ae-ae32-9a9e6cdf1224"
+								answerConceptId="3668934b-ac02-4392-b1ac-d99a16f58768"
+								answerLabel="Social Status" style="checkbox" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><obs conceptId="bd85f34d-0caf-46ae-ae32-9a9e6cdf1224"
+								answerConceptId="d035d3de-d78e-4210-bce0-b586c4fe6bf8"
+								answerLabel="Medical Information (lab investigation results)"
+								style="checkbox" /></td>
+						<td><obs conceptId="bd85f34d-0caf-46ae-ae32-9a9e6cdf1224"
+								answerConceptId="2549e208-11f7-464a-9dd8-2983bd6b136e"
+								answerLabel="Past anti-TB drug history" style="checkbox" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><obs conceptId="bd85f34d-0caf-46ae-ae32-9a9e6cdf1224"
+								answerConceptId="d0f0892e-00b1-47ff-a969-82d3a63d857d"
+								answerLabel="Pre treatment counselling and informed consent"
+								style="checkbox" /></td>
+						<td><obs conceptId="bd85f34d-0caf-46ae-ae32-9a9e6cdf1224"
+								answerConceptId="63858f2b-636c-4833-8b5e-2eed7eb5b811"
+								answerLabel="DOT action plan" style="checkbox" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<br />
+		<tr>
+			<td>
+				<table
+					style="background-color: #e8efdc; margin-left: 0px !important;"
+					align="left" class="tb1" cellspacing="5" width="40%">
+					<tr>
+						<td width="45%">Decision from township level assessment</td>
+						<td width="55%"><obs style="dropdown"
+								conceptId="7e25fea6-19f8-40ad-bb0b-0e871dc8f99b"
+								id="therapySelection" /></td>
+					</tr>
+					<tr>
+						<td>If not submitted, Reason</td>
+						<td><obs conceptId="eae22d6c-3fd8-415c-b794-ad0181815a9b"
+								style="dropdown" id="therapyName" /></td>
+					</tr>
+					<tr>
+						<td>Other</td>
+						<td><obs conceptId="5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+								id="otherReason" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table
+					style="background-color: #e8efdc; margin-left: 0px !important;">
+					<tr>
+						<th colspan="6"><center>Regional / state MDR-TB
+								committee recommendation</center></th>
+					</tr>
+					<tr>
+						<th><center>Date</center></th>
+						<th><center>Decision</center></th>
+						<th><center>If not initiated, Reason</center></th>
+						<th><center>Other</center></th>
+						<th><center>Next date</center></th>
+						<th></th>
+
+					</tr>
+					<tr>
+						<repeat> <template> <obsgroup
+							groupingConceptId="161913AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+						<tr id="{n}-toggleContainer" style="display: none;">
+							<td valign="top">{n}.<obs
+									conceptId="112917AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+							</td>
+							<td valign="top"><obs
+									conceptId="92f96cb4-1ffe-4d1b-bdae-b848cc135fe3"
+									style="dropdown" id="decision" /></td>
+							<td valign="top"><obs
+									conceptId="361d0d95-1d74-4e02-a678-d3ebf5dff7cb"
+									style="dropdown"  id="notinitate" /></td>
+							<td valign="top"><obs
+									conceptId="133863AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"  id="other_regional"/></td>
+							<td valign="top"><obs
+									conceptId="116314AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+									allowFutureDates="true" id="next_date"/></td>
+							<td><button id="{n}-addEntry" class="addEntry">Add</button>
+								<button id="{n}-removeEntry" class="removeEntry">Remove</button>
+							</td>
+						</tr>
+						</obsgroup> </template> <render n="1" concept=" " /> <render n="2" concept=" " /> <render
+							n="3" concept=" " /> <render n="4" concept=" " /> <render n="5"
+							concept=" " /> </repeat>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+	</table>
+</div>
+
+<div class="ke-form-footer">
+	<submit successUrl="" />
+</div>
+
+</htmlform>
